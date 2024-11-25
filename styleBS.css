@@ -1,0 +1,170 @@
+/* Umum */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    height: 100%;
+    width: 100%;
+    
+}
+
+header {
+    background-color: #007bff;
+    padding: 10px 20px;
+    color: white;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+/* Container */
+.comic-detail {
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* Header Button */
+.comic-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.chapter-button {
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.chapter-button:hover {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.comic-info-wrapper {
+    display: flex; 
+    align-items: flex-start;
+    gap: 30px;
+    margin: 40px 0; 
+    flex-wrap: wrap; 
+}
+
+.comic-info-wrapper img {
+    max-width: 350px; 
+    height: auto; 
+    border-radius: 15px; 
+}
+
+.comic-info {
+    flex: 1; 
+    font-size: 16px; 
+    line-height: 1.6; 
+    max-width: 600px; 
+}
+
+.comic-info table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.comic-info td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+}
+
+.comic-info td:first-child {
+    font-weight: bold;
+    background-color: #f9f9f9;
+    width: 30%;
+}
+
+/* Tags */
+.comic-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.comic-tags button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.comic-tags button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+}
+
+@media screen and (max-width: 768px) {
+    .comic-header {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .chapter-button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .comic-info table td:first-child {
+        width: 40%;
+    }
+    ..comic-info-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .comic-info-wrapper img {
+        max-width: 90%;
+        margin-bottom: 20px; 
+    }
+
+    .comic-info {
+        font-size: 14px; 
+        text-align: center; 
+        max-width: 100%;
+    }
+}
